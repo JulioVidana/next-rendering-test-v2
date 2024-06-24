@@ -1,4 +1,4 @@
-# Demo Rendering [Next.js](https://nextjs.org/)
+# Demo Rendering [Next.js](https://nextjs.org/) - V2
 
 - Node version: `v18+`
 - Install dependencies: `npm install`

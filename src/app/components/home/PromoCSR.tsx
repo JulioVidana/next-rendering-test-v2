@@ -9,7 +9,6 @@ const PromoCSR = () => {
   const [promo, setPromo] = useState<Promo | null>(null)
   useEffect(() => {
     async function fetchPromos() {
-      console.log('fetching promos')
       const resp = await fetch('https://gila-render-test-default-rtdb.firebaseio.com/rendering/promo.json')
       const data = await resp.json()
       setPromo(data[0])
