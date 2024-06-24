@@ -14,7 +14,8 @@ export async function generateStaticParams() {
 }
 
 const fetchProduct = async (id: string) => {
-  const response = await fetch(`https://gila-render-test-default-rtdb.firebaseio.com/rendering/products/${id}.json`, {
+  const hardId = Number(id) - 1
+  const response = await fetch(`https://gila-render-test-default-rtdb.firebaseio.com/rendering/products/${hardId}.json`, {
     next: {
       revalidate: 10
     }
