@@ -19,8 +19,8 @@ export default function ProductView({ product }: Props) {
       <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
         <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
           <Image
-            src={product?.imageSrc}
-            alt={product?.imageAlt}
+            src={product?.imageSrc ?? ''}
+            alt={product?.imageAlt ?? ''}
             className="h-full w-full object-cover object-center"
             width={500}
             height={375}
