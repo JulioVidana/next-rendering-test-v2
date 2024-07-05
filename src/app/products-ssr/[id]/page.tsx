@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
 
   const title = product?.name || 'Product'
   const desc = product?.description || 'Product Detail'
-  const imageUrl = product?.imageSrc
+  const imageUrl = product?.imageSrc || '';
 
 
   return {
